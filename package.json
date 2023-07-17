@@ -42,5 +42,6 @@
     "is-nan": "^1.2.1",
     "object-is": "^1.0.1",
     "util": "^0.12.0"
-  }
+  },
+  "type": "commonjs"
 }
