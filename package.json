@@ -2,12 +2,104 @@
   "name": "@nodefill/assert",
   "version": "0.1.0",
   "files": [
-    "src"
+    "dist"
   ],
   "license": "MIT",
   "repository": "github:nodefill/assert",
-  "scripts": {},
-  "devDependencies": {},
-  "dependencies": {},
+  "scripts": {
+    "lint": "prettier -w ."
+  },
+  "exports": {
+    ".": {
+      "node": "./dist/index-node.js",
+      "default": "./dist/index-default.js"
+    },
+    "./strict": {
+      "node": "./dist/strict/index-node.js",
+      "default": "./dist/strict/index-default.js"
+    },
+    "./AssertionError.js": {
+      "node": "./dist/AssertionError-node.js",
+      "default": "./dist/AssertionError-default.js"
+    },
+    "./deepEqual.js": {
+      "node": "./deepEqual-node.js",
+      "default": "./deepEqual.js"
+    },
+    "./deepStrictEqual.js": {
+      "node": "./deepStrictEqual-node.js",
+      "default": "./deepStrictEqual.js"
+    },
+    "./doesNotMatch.js": {
+      "node": "./doesNotMatch-node.js",
+      "default": "./doesNotMatch.js"
+    },
+    "./doesNotReject.js": {
+      "node": "./doesNotReject-node.js",
+      "default": "./doesNotReject.js"
+    },
+    "./doesNotThrow.js": {
+      "node": "./doesNotThrow-node.js",
+      "default": "./doesNotThrow.js"
+    },
+    "./equal.js": {
+      "node": "./equal-node.js",
+      "default": "./equal.js"
+    },
+    "./fail.js": {
+      "node": "./fail-node.js",
+      "default": "./fail.js"
+    },
+    "./ifError.js": {
+      "node": "./ifError-node.js",
+      "default": "./ifError.js"
+    },
+    "./match.js": {
+      "node": "./match-node.js",
+      "default": "./match.js"
+    },
+    "./notDeepEqual.js": {
+      "node": "./notDeepEqual-node.js",
+      "default": "./notDeepEqual.js"
+    },
+    "./notDeepStrictEqual.js": {
+      "node": "./notDeepStrictEqual-node.js",
+      "default": "./notDeepStrictEqual.js"
+    },
+    "./notEqual.js": {
+      "node": "./notEqual-node.js",
+      "default": "./notEqual.js"
+    },
+    "./notStrictEqual.js": {
+      "node": "./notStrictEqual-node.js",
+      "default": "./notStrictEqual.js"
+    },
+    "./ok.js": {
+      "node": "./ok-node.js",
+      "default": "./ok.js"
+    },
+    "./rejects.js": {
+      "node": "./rejects-node.js",
+      "default": "./rejects.js"
+    },
+    "./strictEqual.js": {
+      "node": "./strictEqual-node.js",
+      "default": "./strictEqual.js"
+    },
+    "./throws.js": {
+      "node": "./throws-node.js",
+      "default": "./throws.js"
+    },
+    "./strict.js": {
+      "node": "./strict-node.js",
+      "default": "./strict.js"
+    },
+    "./*.js": "./dist/*.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
   "type": "commonjs"
 }

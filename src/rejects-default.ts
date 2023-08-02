@@ -1,3 +1,4 @@
+"use strict";
 /**
  * @template {any[]} A
  * @param {Promise<any> | ((...a: A) => Promise<any>)} promiseOrPromiseFn
